@@ -1,6 +1,5 @@
 EmojiChar = require('./emoji_char')
 punycode = require('punycode')
-_str = require('underscore.string')
 
 class EmojiData
   EMOJI_MAP = require('../vendor/emoji-data/emoji.json')
@@ -80,7 +79,7 @@ class EmojiData
   #   '👾'
   @char_to_unified: (char) ->
     cps = punycode.ucs2.decode(char)
-    hexes = ( _str.rjust( cp.toString(16), 4, "0") for cp in cps )
+    hexes = ( cp.toString(16).padStart(4, "0") for cp in cps )
     hexes.join("-").toUpperCase()
 
   # Convert a unified codepoint ID directly to its UCS-2 string representation.
