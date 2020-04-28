@@ -1,17 +1,20 @@
 {
-  "name":        "emoji-data",
-  "version":     "0.2.0",
+  "name":        "@magiclab/emoji-data",
+  "version":     "0.3.0",
   "description": "Emoji encoding swiss army knife for NodeJS",
   "keywords": [
     "emoji",
     "unicode"
   ],
-  "homepage": "https://github.com/mroth/emoji-data-js",
-  "bugs":     "https://github.com/mroth/emoji-data-js/issues",
+  "homepage": "https://github.com/badoo/emoji-data-js",
+  "bugs":     "https://github.com/badoo/emoji-data-js/issues",
   "author":   "Matthew Rothenberg <mroth@mroth.info> (http://github.com/mroth)",
+  "maintainers": [
+    "Milos Popovic <milos.popovic@magiclab.co> (http://github.com/miloss)"
+  ],
   "repository": {
     "type": "git",
-    "url":  "https://github.com/mroth/emoji-data-js.git"
+    "url":  "https://github.com/badoo/emoji-data-js.git"
   },
   "main": "./lib/emoji_data.js",
   "scripts": {
