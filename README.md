@@ -26,7 +26,7 @@ environment. :dizzy:
 
 ## Installation
 
-    npm install emoji-data
+    npm install @magiclab/emoji-data
 
 ## Usage Examples
 
