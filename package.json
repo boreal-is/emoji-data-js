@@ -24,9 +24,6 @@
     "compile":    "coffee --bare --output ./lib --compile ./src/*.coffee",
     "bench":      "coffee ./scripts/bench.coffee"
   },
-  "dependencies": {
-    "underscore.string":  "^2.3.3"
-  },
   "devDependencies": {
     "benchmark":          "^1.0.0",
     "chai":               "^1.9.1",
