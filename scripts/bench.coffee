@@ -1,7 +1,6 @@
 Benchmark = require('benchmark')
 EmojiData = require('../lib/emoji_data.js')
 EmojiChar = EmojiData.EmojiChar
-_str = require('underscore.string')
 
 suites = []
 
@@ -55,10 +54,7 @@ suites.push(suite)
 
 micros = (hz) -> (1000000 / hz)
 formatResult = (suitename, r) ->
-  _str.sprintf(
-    "%-45s %10u   %.2f µs/op",
-    "#{suitename}.#{r.name}", r.count, micros(r.hz)
-  )
+  suitename + "." + r.name + " " + r.count + "   " + micros(r.hz) + " µs/op"
 
 Benchmark.forEach(suites, (suite) ->
   results = suite.run()
